@@ -10,11 +10,17 @@
 </head>
 
 <body>
-    <form id="userSearch">
-        <input id="cityInput" type="text" placeholder="Please enter a US city" />
-        <input type="submit" value="Search" />
-    </form>
-    <div id="searchResult" type="text"></div>
+    <div class="container">
+        <form id="userSearch">
+            <input id="cityInput" type="text" placeholder="Please enter a US city" />
+            <input type="submit" value="Search" />
+        </form>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8" id=searchResult></div>
+            <div class="col-2"></div>
+        </div>
+    </div>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
