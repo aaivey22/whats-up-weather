@@ -11,10 +11,16 @@
 
 <body>
     <div class="container">
-        <form id="userSearch">
-            <input id="cityInput" type="text" placeholder="Please enter a US city" />
-            <input type="submit" value="Search" />
-        </form>
+        <div class="row">
+            <div class="col-6" id="recentSearches"></div>
+
+            <div class="col-6" id="searchHere">
+                <form id="userSearch">
+                    <input id="cityInput" type="text" placeholder="Please enter a US city" />
+                    <input type="submit" value="Search" />
+                </form>
+            </div>
+        </div>
         <div class="row">
             <div class="col-12" id="title"></div>
         </div>
