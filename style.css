@@ -1,4 +1,18 @@
-#searchResult {
+#title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#searchResultFuture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#searchResultCurrent {
     display: flex;
     justify-content: center;
     align-items: center;
