@@ -12,31 +12,35 @@
 <body>
     <div class="container">
         <div class="row">
-            <div class="col-6" id="recentSearches"></div>
-
-            <div class="col-6" id="searchHere">
+            <div class="col-10" id="recentSearches"></div>
+            <div class="col-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-10">
                 <form id="userSearch">
                     <input id="cityInput" type="text" placeholder="Please enter a US city" />
                     <input type="submit" value="Search" />
                 </form>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-12" id="title"></div>
-        </div>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8" id="searchResultCurrent"></div>
-            <div class="col-2"></div>
-        </div>
-        <div class="row">
-            <div class="col-2"></div>
-            <div class="col-8" id="searchResultFuture"></div>
             <div class="col-2"></div>
         </div>
     </div>
+    <div class="row">
+        <div class="col-12" id="cityDisplay"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8" id="searchResultCurrent"></div>
+        <div class="col-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-2"></div>
+        <div class="col-8" id="searchResultFuture"></div>
+        <div class="col-2"></div>
+    </div>
+    </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
