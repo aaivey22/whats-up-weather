@@ -10,19 +10,20 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container card">
         <div class="row">
-            <div class="col-10" id="recentSearches"></div>
-            <div class="col-2"></div>
+            <div class="col-12">
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                        <button class="btn btn-outline-secondary" type="submit" id="userSearch">Button</button>
+                    </div>
+                    <input type="text" class="form-control" placeholder="" aria-label="Example text with button addon"
+                        aria-describedby="button-addon1">
+                </div>
+            </div>
         </div>
         <div class="row">
-            <div class="col-10">
-                <form id="userSearch">
-                    <input id="cityInput" type="text" placeholder="Please enter a US city" />
-                    <input type="submit" value="Search" />
-                </form>
-            </div>
-            <div class="col-2"></div>
+            <div class="col-12" id="recentSearches"></div>
         </div>
     </div>
     <div class="row">
@@ -33,13 +34,18 @@
         <div class="col-8" id="searchResultCurrent"></div>
         <div class="col-2"></div>
     </div>
-    <div class="row">
-        <div class="col-2"></div>
-        <div class="col-8" id="searchResultFuture"></div>
-        <div class="col-2"></div>
+    <div class="container">
+        <div class="row card-deck">
+            <div class="col-12 card card-header text-center text-white bg-warning mb-3">
+                <h3>Future 5-Day Forecast</h3>
+            </div>
+        </div>
+        <div class="row card-deck">
+            <!-- <div class="col-1"></div> -->
+            <div class="col-12 card" id="searchResultFuture"></div>
+            <!-- <div class="col-1"></div> -->
+        </div>
     </div>
-    </div>
-
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="script.js"></script>
